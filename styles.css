@@ -22,6 +22,8 @@ body {
   height: 100vh;
   padding-top: 20px;
   padding-left: 10px;
+  background-color: #000;
+  color: #fff;
 }
 
 h1{
@@ -52,6 +54,7 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 20px;
 }
 
 h2 {
@@ -72,10 +75,12 @@ h3 {
 }
 
 a {
-  grid-column: 7 / -1;
-  grid-column: 7 / span 4;
-  justify-self: center;
+  grid-column: 8 / -1;
+  grid-row: 5 / -1;
   margin-top: 10px;
+  text-decoration: none;
+  font-size: 16px;
+  color: yellow;
 }
 
 @media (max-width: 620px) {
@@ -93,8 +98,8 @@ a {
 }
 
 @media (max-width: 430px) {
-  p, h2, h3 {
-    grid-column: 7 / span 2;
+  p, h2, h3, a {
+    grid-column: 7 / -1;
     justify-self: start;
     font-size: 16px;
   }
